@@ -4,6 +4,7 @@
 vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function()
+  use 'embark-theme/vim'
   use 'folke/tokyonight.nvim'
   use 'nvim-lua/completion-nvim'
   use 'rescript-lang/vim-rescript'
