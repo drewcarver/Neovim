@@ -10,6 +10,10 @@ return require('packer').startup(function()
   use 'rescript-lang/vim-rescript'
   use 'neovim/nvim-lspconfig'
   use {
+  'nvim-telescope/telescope.nvim',
+    requires = { {'nvim-lua/plenary.nvim'} }
+  }
+  use {
     "hrsh7th/nvim-cmp",
     requires = {
         "hrsh7th/cmp-buffer", "hrsh7th/cmp-nvim-lsp",
